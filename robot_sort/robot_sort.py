@@ -100,7 +100,21 @@ class SortingRobot:
         #start with light initially on
         self.set_light_on()
 
-        #could start a loop here that runs only when the light is off
+        while self.light_is_on():
+            #at the beginning of the loop, I need to turn the light off
+            self.set_light_off()
+
+            #need to created a loop inside of this loop while robot can move right
+            while self.can_move_right():
+                #in this loop I'll have robot swap items out 
+                self.swap_item()
+                self.move_right()
+                #need a way to compare the value of item held and item on floor
+
+                #need a case here for when item being held is greater than the floor item
+                #little lost on how to do this....feel like I've got a good start
+
+
         #loop should start with turning light off so loop will run
         
         
