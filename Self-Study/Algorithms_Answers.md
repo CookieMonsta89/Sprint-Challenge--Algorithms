@@ -33,7 +33,18 @@ c)  def bunnyEars(bunnies):  #went over this with Luisan in class :)
 
 #### Exercise II
 
+```Suppose that you have an _n_-story building and plenty of eggs. Suppose also
+that an egg gets broken if it is thrown off floor _f_ or higher, and doesn't get
+broken if dropped off a floor less than floor _f_. Devise a strategy to
+determine the value of _f_ such that the number of dropped eggs is minimized.
 
+Write out your proposed algorithm in plain English or pseudocode and give the
+runtime complexity of your solution.```
+
+-So I have a building that is n stories tall.
+-when egg is dropped from f floor or higher, it will break.
+-when egg is dropped from any floor less than f, it will not break.
+ So the floors are already sorted. I'd find the middle floor of the stories and I would drop my egg from there. If the egg does not break, I would now make that floor my bottom floor and I'd find the middle floor again. If the egg broke initially, that would be the top floor and I'd find the middle and repeat.  I'd continue this method until I fount f floor. We learned about this method early in Algorithms and it is called Binary search. I'm certain binary search has a time complexity of O(log n). Increases the number of operations it performs as a logarithmic function of the input size (n)
 
 
 
