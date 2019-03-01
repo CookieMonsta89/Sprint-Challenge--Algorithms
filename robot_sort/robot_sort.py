@@ -141,5 +141,10 @@ if __name__ == "__main__":
 
     robot.sort()
     print(robot._list)
+    n = 2
+    for i in range(n):
+        print(i)
+            
 
 
+O(n^4)

@@ -9,19 +9,21 @@ a)  a = 0
 ```
 b)  sum = 0
 
-    for i in range(n): #0(n)
-      i += 1            runs once
-      for j in range(i + 1, n):  +1
+    for i in range(n): 0(n)
+      i += 1           
+      for j in range(i + 1, n):  O(n)
         j += 1
-        for k in range(j + 1, n): +1
+        for k in range(j + 1, n): 0(n)
           k += 1
-          for l in range(k + 1, 10 + k): +1
+          for l in range(k + 1, 10 + k): 0(c)
             l += 1
             sum += 1
 ```
 
-2. O(n^3). We have three for loops here and we start at 0(n) so we add the three for loops. 
-
+2. O(n^3).  
+ O(n*n*n*c)
+ O(n*n*n)
+ O(n^3)
 ```
 c)  def bunnyEars(bunnies):  #went over this with Luisan in class :)
       if bunnies == 0:
