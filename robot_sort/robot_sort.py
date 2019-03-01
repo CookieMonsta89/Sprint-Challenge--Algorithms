@@ -97,11 +97,13 @@ class SortingRobot:
         return self._light == "ON"
 
     def sort(self):
-        """
-        Sort the robot's list.
-        """
-        # Fill this out
-        pass
+        #start with light initially on
+        self.set_light_on()
+
+        #could start a loop here that runs only when the light is off
+        #loop should start with turning light off so loop will run
+        
+        
 
 
 if __name__ == "__main__":
